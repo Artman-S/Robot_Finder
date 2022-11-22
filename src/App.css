@@ -1,4 +1,61 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
+.App {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: baseline;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  /* display: flex;
+  flex-direction:row;
+  justify-content: center; */
+  /* flex-wrap: wrap; */
+  background-color:#601A4A
+
+  ;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: #63ACBE;
+  font-size: 1.7rem;
+
+}
+
+
+.card {
+  width: 75%;
+  height: ;
+  border-radius: 50px;
+  background: #F9F4EC;
+  box-shadow:   5px 5px 10px #63ACBE,
+                5px 5px 10px #63ACBE;
+
+}
+h2,h3 {
+  color:#AA442F ;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#601A4A
+  ;
+}
+
+
+/* HEX colors, no alpha
+#601A4A
+#AA442F
+#63ACBE
+#F9F4EC
+ */
