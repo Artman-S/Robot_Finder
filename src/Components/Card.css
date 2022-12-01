@@ -1,0 +1,57 @@
+/* :root{
+    --background-col
+
+} */
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: #63ACBE;
+    font-size: 1.7rem;
+  
+  }
+  
+  
+  .card {
+    width: 75%;
+    /* height: ; */
+    border-radius: 10%;
+    background: #F9F4EC;
+    box-shadow:   5px 5px 10px #63ACBE,
+                  5px 5px 10px #63ACBE;
+  
+  }
+  h2,h3 {
+    color:#AA442F ;
+    font-weight: bolder;
+    font-size: 1.7rem;
+  }
+  span {
+    text-decoration:  underline #AA442F ;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#601A4A
+    ;
+  }
+
+  button {
+    font-size: 150%;
+    font-weight: bold;
+    border-radius: 20%;
+    background-color:   #601A4A    ;
+    color: #63ACBE;
+
+  }
+  
+  
+  /* HEX colors, no alpha
+  #601A4A
+  #AA442F
+  #63ACBE
+  #F9F4EC
+   */
