@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <div className='title'>
       <h1>Robot Finder</h1>
+      <input type="text" placeholder='search' />
       </div> 
       {Robots.map((Robot) =>( 
       <RobotCard {...Robot}/>
