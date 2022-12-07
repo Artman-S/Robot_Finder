@@ -8,10 +8,10 @@ import './App.css';
 
 
 function App() {
-  console.log(Robots[0])
+  // console.log(Robots[0])
   //je créer un state pour mon input de recherche avec des quotes vides
-  const [searchInput, setSearchInput] = useState('')
-  const searchItems = (searchValue)=> { setSearchInput(searchValue)}
+  const [searchInput, setSearchInput]= useState('')
+
   /*je map sur mon component <Robot /> pour afficher tout mon tableau */
   return (
     <div className="App">
@@ -19,13 +19,16 @@ function App() {
       <div className='title'>
       <h1>Robot Finder</h1>
       <input 
-      type="text" 
+      type="text"
       placeholder='search'
-      onChange={(e) => searchItems(e.target.value)}
+      value={searchInput}
+      onChange={(e)=>setSearchInput(e.target.value)}
       />
       </div> 
-      {Robots.map((Robot) =>( 
-      <RobotCard {...Robot}/>
+      {Robots
+      .filter((robot)=>robot.name.toLowerCase().includes(searchInput.toLowerCase()))
+      .map((robot) =>( 
+      <RobotCard {...robot}/>
       ))}
     </div>
   );
